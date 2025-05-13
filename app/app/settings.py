@@ -92,8 +92,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Use MySQL engine
-        'NAME': 'villanueva2_db1',                 # Your database name
-        'USER': 'villanueva2',                     # Your MySQL username
+        'NAME': 'default_db1',                 # Your database name
+        'USER': 'default',                     # Your MySQL username
         'PASSWORD': '123456',                  # Your MySQL password
         'HOST': 'localhost',                   # MySQL server host (localhost if on the same machine)
         'PORT': '3306',                        # MySQL default port
@@ -140,7 +140,7 @@ STATIC_URL = 'static/'
 
 # Media settings
 
-MEDIA_URL = '/villanueva2/media/'
+MEDIA_URL = '/default/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
